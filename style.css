@@ -305,7 +305,9 @@ footer {
 
   .image-wrapper {
     height: auto;
-    margin-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    order: -1;
   }
 
   .profile-image {
