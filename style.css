@@ -116,9 +116,8 @@ header {
 }
 
 .text-highlight {
-  color: inherit;
-  font-style: italic;
-  font-weight: 500;
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 .hero-text .cta-group {
@@ -192,6 +191,12 @@ header {
   transform: translateY(-1px);
 }
 
+.meta-line {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+}
+
 .secondary-link {
   color: var(--secondary-text);
   text-decoration: none;
@@ -232,12 +237,12 @@ header {
 
 .profile-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 560px;
   height: auto;
   object-fit: contain;
-  /* Mask to fade out the bottom significantly, and slightly the left side */
-  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  /* Mask to fade out the bottom of the portrait */
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 
   animation: fadeIn 1.2s ease-out forwards;
 }
@@ -311,7 +316,7 @@ footer {
   }
 
   .profile-image {
-    max-width: 80%;
+    max-width: 65%;
   }
 
   footer {
